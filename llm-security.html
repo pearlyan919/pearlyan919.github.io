@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LLM Security | Mingzhu Yan</title>
-<style>body{max-width:860px;margin:60px auto;padding:0 28px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#222;line-height:1.75}a{color:#333}h1{font-size:34px}h2{margin-top:38px;border-bottom:1px solid #e5e5e5;padding-bottom:8px}.meta{color:#666}</style></head>
-<body>
-<p><a href="../index.html">← Back to homepage</a></p>
-<h1>Security Evaluation and Robustness Analysis of Large Language Models</h1>
-<div class="meta">Independent Research · 2026 - Present</div>
-<h2>Focus</h2>
-<p>This research studies the security and safety behavior of large language models through adversarial evaluation and reproducible auditing.</p>
-<h2>Topics</h2>
-<ul><li>Jailbreak and red-teaming evaluation</li><li>Adversarial prompting</li><li>Cross-model transfer analysis</li><li>Output-level safety auditing</li><li>Reproducible security evaluation</li></ul>
-<h2>Research Artifacts</h2>
-<p>Scripts, raw experiment records, figures, and technical reports can be linked here as the project develops.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLM Security | Mingzhu Yan</title>
+<style>body{max-width:860px;margin:56px auto;padding:0 28px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#222;line-height:1.75}a{color:#333}h1{font-size:32px;line-height:1.25}h2{margin-top:34px;border-bottom:1px solid #e5e5e5;padding-bottom:7px}.meta{color:#666}.stat{font-size:20px;font-weight:600;margin:14px 0}.note{color:#666;font-size:14px}</style></head>
+<body><p><a href="index.html">← Back to homepage</a></p>
+<h1>LLM Jailbreak &amp; Security Evaluation</h1><div class="meta">Independent Research · 2026–Present</div>
+<h2>Overview</h2><p>I study jailbreak robustness and cross-model transfer using reproducible GCG-based adversarial evaluation, with an emphasis on metrics that reflect meaningful security behavior rather than surface-level refusal alone.</p>
+<h2>Key Results</h2>
+<p class="stat">10/10 vs. 1/10</p><p>Across 10 AdvBench harmful behaviors, GCG succeeded on 10/10 tested targets for Llama-3.2-3B-Instruct, compared with 1/10 for Llama-2-7B-Chat under the same controlled evaluation setting.</p>
+<p class="stat">100% vs. ~30%</p><p>Cross-model transfer was strongly asymmetric: suffixes generated on Gemma-2 transferred to the tested Llama models at 100%, while transfer from the tested Llama models to Gemma-2 was only about 30%.</p>
+<p class="note">These results are from the controlled experiments and configurations documented in the project repository.</p>
+<h2>Methods</h2><ul><li>GCG jailbreak evaluation</li><li>Cross-model transfer analysis</li><li>Token-level suffix truncation</li><li>Output-level security auditing</li><li>Reproducible experiment pipelines and artifacts</li></ul>
+<h2>Artifacts</h2><p><a href="https://github.com/pearlyan919/llm-alignment-attack-experiments" target="_blank" rel="noopener">GitHub repository →</a></p>
 </body></html>
